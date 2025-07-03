@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armed Detective Agency | Yokohama</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floating-papers" id="floating-papers"></div>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <i class="fas fa-search"></i>
+                Armed Detective Agency
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Armed Detective Agency</h1>
+                <p>Protecting Yokohama with supernatural abilities and unwavering resolve. We handle cases that ordinary law enforcement cannot.</p>
+                <a href="#contact" class="cta-button">Request Investigation</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>Supernatural Investigations</h3>
+                        <p>Specialized in cases involving ability users and paranormal phenomena that require our unique expertise.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Protection Services</h3>
+                        <p>Personal protection and security for high-risk individuals, utilizing our members' extraordinary abilities.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Missing Persons</h3>
+                        <p>Locating missing individuals with our advanced investigation techniques and supernatural tracking methods.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-gavel"></i>
+                        <h3>Criminal Investigations</h3>
+                        <p>Solving complex criminal cases that challenge conventional law enforcement methods.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Literary Consultation</h3>
+                        <p>Expert analysis and consultation on literature-related mysteries and historical document authentication.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Surveillance</h3>
+                        <p>Discrete surveillance operations using both traditional methods and supernatural observation techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About the Agency</h2>
+                        <p>The Armed Detective Agency operates as a supernatural detective organization based in Yokohama. Our team consists of individuals with extraordinary abilities who dedicate their lives to protecting the city and its inhabitants.</p>
+                        <p>Founded on the principles of justice and literary appreciation, we handle cases that ordinary law enforcement cannot resolve. Each member brings unique skills and abilities to our investigations.</p>
+                        <p>We work closely with local authorities while maintaining our independence, ensuring that justice prevails in even the most challenging circumstances.</p>
+                        <a href="#contact" class="cta-button">Join Our Mission</a>
+                    </div>
+                    <div class="about-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="case-type">Case Type</label>
+                        <select id="case-type" name="case-type" style="width: 100%; padding: 12px; border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 5px; background: rgba(20, 20, 20, 0.8); color: #e8e8e8;">
+                            <option value="">Select Case Type</option>
+                            <option value="supernatural">Supernatural Investigation</option>
+                            <option value="missing">Missing Person</option>
+                            <option value="protection">Protection Services</option>
+                            <option value="criminal">Criminal Investigation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Case Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please describe your case in detail..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%; margin-top: 1rem;">
+                        Submit Case Request
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Armed Detective Agency. Licensed by the Special Division for Unusual Powers.</p>
+                <p>Confidential investigations • Supernatural cases • Yokohama based</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: #ffd700; margin-bottom: 1rem;">Case Received</h2>
+            <p>Thank you for contacting the Armed Detective Agency. We have received your case request and will review it promptly.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">We will contact you within 24 hours to discuss the details.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
