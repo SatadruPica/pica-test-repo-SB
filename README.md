@@ -1,4 +1,4 @@
-# Simple Website Project
+# Simple Website Project - new update
 
 ## Overview
 This is a simple website project created as part of a web development experiment.
